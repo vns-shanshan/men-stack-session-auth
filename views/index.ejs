@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Auth app!</h1>
+  <ul>
+    <li><a href="/auth/sign-in">Sign In</a></li>
+    <li><a href="/auth/sign-up">Sign Up</a></li>
+    <li><a href="/auth/sign-out">Sign Out</a></li>
+  </ul>
+
+  <% if (user?.username) { %>
+  <p>Welcome to the app <%= user.username %></p>
+  <% } else { %>
+  <p>Welcome Guest, Please sign in or sign up</p>
+  <% } %>
+
+</body>
+
+</html>
